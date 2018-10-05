@@ -112,27 +112,7 @@ public class MainActivity extends AppCompatActivity
             new AttendanceEntry("AD", 23.3, true)
         };
 
-        TableLayout tl = (TableLayout) findViewById(R.id.table_layout);
 
-        for (int i = 0; i < entries.length; i++) {
-            TableRow tr = new TableRow(this);
-
-            AttendanceEntry entry = entries[i];
-
-            TextView label = new TextView(this);
-            label.setText(entry.name);
-            tr.addView(label);
-
-            TextView price = new TextView(this);
-            price.setText(entry.percentAttended + "%");
-            tr.addView(price);
-
-            TextView offer = new TextView(this);
-            offer.setText(String.valueOf(entry.attended));
-            tr.addView(offer);
-
-            tl.addView(tr);
-        }
     }
 
     @Override
