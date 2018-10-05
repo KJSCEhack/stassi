@@ -12,6 +12,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CalendarView;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import java.util.Arrays;
+import java.util.Date;
+import java.util.stream.IntStream;
+
+
+class AttendanceEntry {
+    public String name;
+    public double percentAttended;
+    public boolean attended;
+
+    public AttendanceEntry(String name, double percentAttended, boolean attended) {
+        this.name = name;
+        this.percentAttended = percentAttended;
+        this.attended = attended;
+    }
+}
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -40,6 +62,77 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        CalendarView view = (CalendarView) findViewById(R.id.calendar_view);
+
+        Date today = new Date();
+        final int thisMonth = today.getMonth();
+        int thisYear = today.getYear();
+
+        Date firstDate = new Date();
+        firstDate.setDate(1);
+        firstDate.setMonth(thisMonth);
+        firstDate.setYear(thisYear);
+
+        Date lastDate = new Date();
+        lastDate.setMonth(thisMonth);
+        lastDate.setYear(thisYear);
+
+
+        int[] day31 = {1, 3, 5, 7, 8, 10, 12};
+        boolean is31 = false;
+
+        for(int i = 0; i < day31.length; i++) {
+            if (day31[i] == thisMonth + 1) {
+                is31 = true;
+                break;
+            }
+        }
+
+
+        if (is31) {
+            lastDate.setDate(31);
+        }
+        else {
+            if (thisMonth != 2) {
+                lastDate.setDate(30);
+            }
+            else {
+                lastDate.setDate(28);
+            }
+        }
+
+
+        view.setMaxDate(lastDate.getTime());
+        view.setMinDate(firstDate.getTime());
+
+        AttendanceEntry[] entries = new AttendanceEntry[] {
+            new AttendanceEntry("CG", 52.3, true),
+            new AttendanceEntry("DCN", 55.3, true),
+            new AttendanceEntry("AD", 23.3, true)
+        };
+
+        TableLayout tl = (TableLayout) findViewById(R.id.table_layout);
+
+        for (int i = 0; i < entries.length; i++) {
+            TableRow tr = new TableRow(this);
+
+            AttendanceEntry entry = entries[i];
+
+            TextView label = new TextView(this);
+            label.setText(entry.name);
+            tr.addView(label);
+
+            TextView price = new TextView(this);
+            price.setText(entry.percentAttended + "%");
+            tr.addView(price);
+
+            TextView offer = new TextView(this);
+            offer.setText(String.valueOf(entry.attended));
+            tr.addView(offer);
+
+            tl.addView(tr);
+        }
     }
 
     @Override
