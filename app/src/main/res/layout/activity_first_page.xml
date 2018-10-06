@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstPage">
+
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="349dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="81dp"></TextView>
+
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/side_nav_bar"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:hint="College name "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        tools:layout_editor_absoluteX="97dp"></EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:background="@drawable/side_nav_bar"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:hint="Semester  "
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="272dp"></EditText>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/side_nav_bar"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:hint="Branch "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        tools:layout_editor_absoluteX="97dp"></EditText>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="77dp"
+        android:layout_height="78dp"
+        android:background="@drawable/ic_account_circle_black_24dp"
+        android:elevation="20dp"
+        android:text=""
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        android:elevation="22dp"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_launcher_background"
+
+        android:text=""
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:background="@drawable/next"
+        android:elevation="20dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+</android.support.constraint.ConstraintLayout>

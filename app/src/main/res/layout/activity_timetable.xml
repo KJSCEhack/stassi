@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timetable">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        android:elevation="22dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:background="@drawable/next"
+        android:elevation="20dp"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="T"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="F"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="S"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="344dp"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="W"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="T"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="S"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        tools:layout_editor_absoluteY="16dp"></TextView>
+
+    <EditText
+        android:id="@+id/textView15"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:background="@drawable/side_nav_bar"
+        android:elevation="20dp"
+        android:hint="  Start time"
+
+        android:text=""
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <EditText
+        android:id="@+id/textView17"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/side_nav_bar"
+
+        android:hint="9:00 - 10:00"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/textView18"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/side_nav_bar"
+        android:hint="10:00 - 11:00"
+
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <EditText
+        android:id="@+id/textView19"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/side_nav_bar"
+        android:hint="11:00 - 12:00"
+
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <EditText
+        android:id="@+id/textView20"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/side_nav_bar"
+        android:hint="12:00 - 1:00"
+
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <EditText
+        android:id="@+id/textView21"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/side_nav_bar"
+        android:hint="1:00 - 2:00"
+
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <EditText
+        android:id="@+id/textView16"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:background="@drawable/side_nav_bar"
+        android:elevation="20dp"
+        android:hint="   End time"
+
+        android:text=""
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <ImageView
+        android:id="@+id/btn_capture_photo"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_capture_photo2"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <ImageView
+        android:id="@+id/btn_capture_photo2"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_capture_photo3"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <ImageView
+        android:id="@+id/btn_capture_photo3"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_capture_photo4"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <ImageView
+        android:id="@+id/btn_capture_photo4"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_capture_photo6"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <ImageView
+        android:id="@+id/btn_capture_photo6"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:src="@drawable/rectangle"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Lecture 1"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="10sp"
+        android:textColorHint="#FFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Lecture 2"
+
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="10sp"
+        android:textColorHint="#FFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Lecture 3"
+
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="10sp"
+        android:textColorHint="#FFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Lecture 4"
+
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="10sp"
+        android:textColorHint="#FFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Lecture 5"
+
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="10sp"
+        android:textColorHint="#FFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+</android.support.constraint.ConstraintLayout>

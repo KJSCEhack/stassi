@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".firstPage" />
+
+        <meta-data android:name="com.google.android.actions" />
+
+        <activity android:name=".subjects" />
+        <activity android:name=".timetable" />
+        <activity android:name=".google_calendar"></activity>
     </application>
 
 </manifest>
